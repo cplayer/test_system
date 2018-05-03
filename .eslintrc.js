@@ -14,6 +14,8 @@ module.exports = {
     'consistent-return': [0],
     'react/forbid-prop-types': [0],
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
+    'react/jsx-indent': 4,
+    'react/jsx-indent-props': false,
     'global-require': [1],
     'import/prefer-default-export': [0],
     'react/jsx-no-bind': [0],

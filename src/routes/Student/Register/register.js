@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
-import PageHeaderLayout from '../../../layouts/PageHeaderLayout';
 import { Card, Steps } from 'antd';
 import { Route, Switch, Redirect } from 'dva/router';
+import PageHeaderLayout from '../../../layouts/PageHeaderLayout';
 import { getRoutes } from '../../../utils/utils';
 import NotFound from '../../Exception/404';
 
@@ -30,10 +30,7 @@ export default class Register extends PureComponent {
     const s = getRoutes(match.path, routerData);
     console.log(s);
     return (
-      <PageHeaderLayout
-        title="报名活动"
-        content="这里可以对各项允许的事务进行申请。"
-      >
+      <PageHeaderLayout title="报名活动" content="这里可以对各项允许的事务进行申请。">
         <Card bordered={false}>
           <Fragment>
             <Steps current={this.getCurrentStep()}>
@@ -56,6 +53,6 @@ export default class Register extends PureComponent {
           </Fragment>
         </Card>
       </PageHeaderLayout>
-    )
+    );
   }
 }
