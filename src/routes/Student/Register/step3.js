@@ -5,9 +5,7 @@ import { Form } from 'antd';
 @Form.create()
 class Step3 extends React.PureComponent {
   render() {
-    return (
-      <div>Step3</div>
-    )
+    return <div>Step3</div>;
   }
 }
 
